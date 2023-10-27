@@ -100,13 +100,13 @@ section{
 }
 
 .social-icons a{
-    color: black;
+    color: rgb(0, 0, 61);
     font-size: 1.7em;
     padding-right: 30px;
 }
 
 .social-icons a:hover{
-    color: rgb(175, 175, 175);
+    color: /*rgb(175, 175, 175)*/blue;
 }
 
 /* .cards{
