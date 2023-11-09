@@ -58,7 +58,7 @@ section{
 }
 
 .main h2{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.4em;
     font-weight: 500;
 }
@@ -66,8 +66,8 @@ section{
 .main h2 span{
     display: inline-block;
     margin-top: 10px;
-    color: black;
-    font-size: 2em;
+    color: darkblue;
+    font-size: 3em;
     font-weight: 600;
 }
 
@@ -181,6 +181,80 @@ section{
 
 .project-card:hover{
     transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details{
+    text-decoration: none;
+    color: darkblue;
+}
+
+.more-details:hover{
+    color: blue;
+}
+
+.content .icon{
+    font-size: 4.5em;
+}
+
+.content .info h3{
+    color: #000;
+}
+
+.content .info p{
+    font-size: 1.5em;
+}
+
+.footer{
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: darkblue;
+    /* border: 2px rgb(104, 73, 73) solid; */
+}
+
+.footer .social-icons a{
+    color: #fff;
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+.footer .social-icons a :hover{
+    color: gray;
 }
 
 @media(max-width: 1023px){
