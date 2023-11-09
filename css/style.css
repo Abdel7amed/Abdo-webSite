@@ -59,7 +59,7 @@ section{
 
 .main h2{
     color: rgb(0, 0, 0);
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -68,13 +68,13 @@ section{
     margin-top: 10px;
     color: darkblue;
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .main h3{
     color: rgb(0, 0, 0);
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.9em;
+    font-weight: 580;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
