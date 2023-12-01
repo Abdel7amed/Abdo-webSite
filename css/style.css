@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-header{
+  header{
     background-color: rgb(245, 245, 245);
     width: 100%;
     position: fixed;
@@ -17,7 +17,107 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    color: darkblue;
+    text-decoration: none;
+  }
+  
+  .container{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-branding{
+    text-decoration: none;
+    color: darkblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.5px;
+  }
+  
+  .nav-link{
+    transition: 0.3s ease-out;
+    color: darkblue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
 }
+  
+  .nav-link:hover{
+    color: blue;
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: darkblue;
+  }
+  
+  @media(max-width:1024px){
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: skyblue;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  }
+  
 
 .logo{
     text-decoration: none;
