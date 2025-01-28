@@ -103,7 +103,7 @@
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: skyblue;
+      background-color: rgba(255, 255, 255, 0);
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -331,8 +331,8 @@ section{
 }
 
 .footer{
-    background-color: #000016;
-    color: #fff;
+    background-color:#000016;
+    color: #ffffff;
     padding: 2em;
     display: flex;
     justify-content: space-between;
@@ -344,7 +344,7 @@ section{
 }
 
 .footer-title span{
-    color: darkblue;
+    color: rgb(0, 0, 185);
     /* border: 2px rgb(104, 73, 73) solid; */
 }
 
